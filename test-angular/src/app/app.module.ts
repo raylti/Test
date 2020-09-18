@@ -8,6 +8,7 @@ import { RahulComponent } from './rahul/rahul.component';
 import { Rahul1Component } from './rahul1/rahul1.component';
 import { Abhinav1Component } from './abhinav1/abhinav1.component';
 import { YuguComponent } from './yugu/yugu.component';
+import { Abhinav3Component } from './abhinav3/abhinav3.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { YuguComponent } from './yugu/yugu.component';
     RahulComponent,
     Rahul1Component,
     Abhinav1Component,
-    YuguComponent
+    YuguComponent,
+    Abhinav3Component
   ],
   imports: [
     BrowserModule,
