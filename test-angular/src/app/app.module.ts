@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { AbhinavComponent } from './abhinav/abhinav.component';
 import { RahulComponent } from './rahul/rahul.component';
 import { Rahul1Component } from './rahul1/rahul1.component';
+import { Abhinav1Component } from './abhinav1/abhinav1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AbhinavComponent,
     RahulComponent,
-    Rahul1Component
+    Rahul1Component,
+    Abhinav1Component
   ],
   imports: [
     BrowserModule,
