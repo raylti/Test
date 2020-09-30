@@ -17,6 +17,7 @@ import com.lti.entity.Employment;
 import com.lti.entity.Loan;
 import com.lti.entity.User;
 import com.lti.entity.Vehicle;
+import com.lti.entity.Identity;
 import com.lti.repo.UserRepo;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -57,9 +58,14 @@ public class TestUser {
 		e1.setAnnualIncome(50000.0);
 		e1.setEmploymentType("Salaried");
 		
+		Identity identity1 =  new Identity();
+		identity1.setAadhaarNo("516890005212");
+		identity1.setPanNo("CFMPR21L1");
+		
 		v1.setUser(u1);
 		l1.setUser(u1);
 		e1.setUser(u1);
+		identity1.setUser(u1);
 		
 		u1.setVeh(v1);
 		u1.setLoan(l1);
@@ -114,5 +120,14 @@ public class TestUser {
 		e1.setEmploymentType("Salaried");
 		
 		repo.saveEmploymentDetails(e1);
+	}
+	@Test
+	public void saveIdentityDetails() {
+		Identity identity1 =  new Identity();
+		identity1.setAadhaarNo("516890005212");
+		identity1.setPanNo("CFMPR21L1");
+		
+		
+		repo.saveIdentityDetails(identity1);
 	}
 }

@@ -26,7 +26,7 @@
 		</properties>
 	</persistence-unit>
 
-	<persistence-unit name="SpringJPA1" transaction-type="RESOURCE_LOCAL">
+<!--  	<persistence-unit name="SpringJPA1" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>com.lti.entity.UserDetails</class>
        	<class>com.lti.entity.VehicleDetails</class>
@@ -41,7 +41,7 @@
             <property name="hibernate.show_sql" value="true" />
             <property name="hibernate.hbm2ddl.auto" value="update" />
         </properties>
-    </persistence-unit>
+    </persistence-unit>-->
 </persistence>
 
 
